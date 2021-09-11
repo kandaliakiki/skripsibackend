@@ -79,7 +79,7 @@ public class RestaurantService {
 			Restaurant restoobj =getrestaurantbyid(restaurantids.get(i).toString());  
 			restaurantsobj.add(restoobj);
 			double distancediff = distance(Double.parseDouble(latitude), Double.parseDouble(longitude),
-					Double.parseDouble(restoobj.getLatitude()), Double.parseDouble(restoobj.getLatitude()), 'K');
+					Double.parseDouble(restoobj.getLatitude()), Double.parseDouble(restoobj.getLongitude()), 'K');
 			distances.add(distancediff); //masukin ke list distance
 			maprestowithid.put(restaurantids.get(i).toString(),distancediff); //masukin id dan difference
 			
